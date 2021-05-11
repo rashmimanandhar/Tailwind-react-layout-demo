@@ -19,12 +19,12 @@ const Content = ({ role, handleToggle, sidebarOpen }) => {
             </>
           )}
           {role === "interpreter" && (
-            <div className="grid grid-cols-12 flex-grow gap-4">
-              <div className="col-span-9 h-full flex flex-col">
+            <div className="flex flex-row flex-grow gap-4">
+              <div className="flex-grow h-full flex flex-col">
                 <Video></Video>
                 <ControlsBar></ControlsBar>
               </div>
-              <div className="col-span-3 flex gap-4 flex-col">
+              <div className="flex gap-4 flex-col" style={{ width: "400px" }}>
                 <RelayIn></RelayIn>
                 <RelayOut></RelayOut>
               </div>
