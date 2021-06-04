@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.table-header {
+  @apply px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider;
+}
+
+.table-header-no-title {
+  @apply px-6 py-3 border-b-2 border-gray-300;
+}
+
+.table-data {
+  @apply px-6 py-4 whitespace-nowrap border-b border-gray-500 text-sm leading-5 text-blue-900;
+}

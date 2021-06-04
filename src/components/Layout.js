@@ -4,12 +4,12 @@ import SideBar from "./SideBar";
 import SideBarContent from "./SideBarContent";
 
 const Layout = ({ role }) => {
-  const [sidebarOpen, setsidebarOpen] = useState(true);
+  const [sidebarOpen, setsidebarOpen] = useState(false);
   const handleToggle = () => {
     setsidebarOpen(!sidebarOpen);
   };
   return (
-    <div className="h-screen bg-gray-700 flex">
+    <div className="h-screen bg-gray-700 flex overflow-hidden">
       <Content
         role={role}
         handleToggle={handleToggle}

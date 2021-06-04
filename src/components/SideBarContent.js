@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const SideBarContent = ({ sidebarOpen }) => {
@@ -5,10 +6,11 @@ const SideBarContent = ({ sidebarOpen }) => {
     <>
       <aside
         className={
-          " transition-all duration-300" + (!sidebarOpen ? " w-0" : " w-64 ")
+          " transition-all duration-300 overflow-hidden" +
+          (!sidebarOpen ? " w-0" : " w-64 ")
         }
       >
-        <div className="h-full bg-red-900"></div>
+        <div className="h-full bg-red-900 flex flex-col items-center"></div>
       </aside>
     </>
   );
